@@ -19,23 +19,6 @@ build/  # General build folder, might overlap but safe to include
 # Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
 
-# --- ESP-IDF (esp32-cam-streamer specific) ---
-# Build output
-03_camera_model_basics/esp32-cam-streamer/build/
-
-# SDK configuration backups
-03_camera_model_basics/esp32-cam-streamer/sdkconfig.old
-
-# Optional: Ignore the active sdkconfig if it's machine-specific often
-# 03_camera_model_basics/esp32-cam-streamer/sdkconfig
-
-# Optional: Ignore dependencies lock file if builds differ across machines
-03_camera_model_basics/esp32-cam-streamer/dependencies.lock
-
-# --- Example Flask Server Specific ---
-# Uploads directory for the image server example
-03_camera_model_basics/esp32_image_server/uploads/
-
 # --- IDE / Editor Files ---
 .vscode/
 .idea/
