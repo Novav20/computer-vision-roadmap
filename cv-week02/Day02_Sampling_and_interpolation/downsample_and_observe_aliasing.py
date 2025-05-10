@@ -5,7 +5,7 @@ import os
 
 # --- Configruation ---
 TEST_IMAGE_PATH = os.path.join(os.path.dirname(__file__), "Crono.png")
-OUTPUT_DIRECTORY = os.path.join(os.path.dirname(__file__), "downsampled_images")
+OUTPUT_DIRECTORY = os.path.join(os.path.dirname(__file__), "output_downsampled_images")
 os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
 
 DOWNSAMPLE_FACTORS = [2, 4, 8]
