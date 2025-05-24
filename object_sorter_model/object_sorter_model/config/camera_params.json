@@ -1,0 +1,37 @@
+{
+    "calibration_file_name": "camera_calibration_data.npz", 
+    "perspective_warp": {
+      "undistorted_src_points": [
+        [150, 100],
+        [450, 110],
+        [500, 350],
+        [100, 340]
+      ],
+      "output_width": 300,
+      "output_height": 250
+    },
+    "preprocessing_params": {
+      "downsample_factor": 1, 
+      "luminance_equalization": {
+        "apply": false, 
+        "color_space": "LAB" 
+      },
+      "denoising_filter": {
+        "apply": true, 
+        "type": "bilateral", 
+        "params": { 
+          "d": 9, 
+          "sigma_color": 50, 
+          "sigma_space": 50 
+        }
+      },
+      "deconvolution": {
+        "apply": false, 
+        "type": "wiener", 
+        "blur_kernel_type": "gaussian", 
+        "kernel_params": { "size": 15, "sigma": 2.0 },
+        "wiener_K": 0.005, 
+        "inverse_epsilon": 1e-3 
+      }
+    }
+  }
